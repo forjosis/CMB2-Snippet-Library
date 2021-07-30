@@ -82,7 +82,7 @@ add_action( 'cmb2_admin_init', 'js_limited_group_setup', 9999 );
 
 $repeater_metaboxes = array('field_group_test_one','field_group_test_two'); // IDs of the metabox containing the repeater group
 
-foreach ($repeater_metaboxe as $value) {
+foreach ($repeater_metaboxes as $value) {
     add_action( 'cmb2_after_post_form_'.$value, 'js_limit_group_repeat', 10, 2);
 }
 
